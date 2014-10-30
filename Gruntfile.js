@@ -324,10 +324,12 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-			'.nojekyll',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
+		  src: '.nojekyll',
+		  dest: '<%= config.dist %>/.nojekyll'
+		}, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.dist %>/.htaccess'
         }, {
