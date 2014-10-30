@@ -372,7 +372,7 @@ module.exports = function (grunt) {
 		},
 		master: {
 			options: {
-		        remote: 'git@github.com/gaetanlebrun/gaetanlebrun.github.io.git',
+		        remote: 'https://github.com/gaetanlebrun/gaetanlebrun.github.io.git',
 				branch: 'master'
 		    }
 		}
