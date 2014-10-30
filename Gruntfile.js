@@ -361,7 +361,22 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
-    }
+    },
+
+    buildcontrol: {
+		options: {
+			dir: 'dist',
+			commit: true,
+			push: true,
+			message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+		},
+		master: {
+			options: {
+		        remote: 'git@github.com/gaetanlebrun/gaetanlebrun.github.io.git',
+				branch: 'master'
+		    }
+		}
+	}
   });
 
 
